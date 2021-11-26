@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- js -->
+  <script type="text/javascript" src="js/script.js"></script>
+  <title>Formulario</title>
+</head>
+
+<body>
+  <div class="container  h-100 w-50 d-flex justify-content-center align-items-center">
+    <div class="row p-5">
+      <form novalidate>
+        <div class="mb-3 ">
+          <label for="user_name" class="form-label">Nombre:</label>
+          <input type="text" id="user_name" class="form-control" maxlength="80" required />
+        </div>
+
+        <div class="mb-3 ">
+          <label for="user_email" class="form-label">
+            Correo electronico
+            <span class="error" aria-live="polite"></span>
+          </label>
+          <input type="email" id="user_email" name="mail" required minlength="8" maxlength="50" class="form-control"
+            required />
+          <span id="badEmail" class="badEmail" style="display:none"></span>
+        </div>
+
+        <div class="mb-3 ">
+          <label for="user_password" class="form-label">Contraseña</label>
+          <input type="password" id="user_password" class="form-control" maxlength="50" required />
+        </div>
+
+        <div class="mb-3 ">
+          <button class="btn btn-primary" type="button" onclick="registerUser()">
+            Guardar
+          </button>
+        </div>
+        <div class="mb-3 text-end">
+          <span class="ml-auto"><a href="login.html">Volver</a></span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="container mb-3">
+    <div id="table_User"></div>
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- Llamado a funciones de consulta -->
+  <script type="text/javascript" src="js/url.js"></script>
+  <script src="js/User.js "></script>
+</body>
+
+</html>
